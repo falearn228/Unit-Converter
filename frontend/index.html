@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+        <div class="card">
+          <div class="">
+             <h5>Unit Converter</h5>
+             <div class="radio">
+              <input checked type="radio" id="huey" name="unit-type" value="length" />
+              <label for="huey">Length</label>
+              <input type="radio" id="dewey" name="unit-type" value="weight" />
+              <label for="dewey">Weight</label>
+              <input type="radio" id="louie" name="unit-type" value="temperature" />
+              <label for="louie">Temperature</label>
+          </div>
+             <div class="inputs main-content">
+              <div>
+               <label style="display: block;" for="length">Enter the length to convert</label>
+               <input required minlength="1" id="length"/>
+              </div>
+              <div>
+               <label style="display: block;" for="from">Unit to Convert from</label>
+               <select id="from"></select>
+              </div>
+              <div>
+               <label style="display: block;" for="to">Unit to Convert to</label>
+               <select id="to"></select>
+              </div>
+              <div>
+               <button type="submit"  id="convert">Convert</button>
+              </div>
+            </div>
+             </div>
+             <div class="aside-content close">
+              <h5>Result of your calculation</h5>
+              <strong><h5 id="result"></h5></strong>
+              <button type="button" id="reset">Reset</button>
+             </div>
+            </div>
+          </div>
+       </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
